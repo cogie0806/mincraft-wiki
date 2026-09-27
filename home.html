@@ -2,37 +2,62 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cogie0806のマイクラwiki</title>
+    <style>
+        /* 全体の基本設定 */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            text-align: center;
+            background-color: #ffffff;
+            margin: 0;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #111111;
+            margin-bottom: 40px;
+        }
+
+        /* 💡 リンクボタンの共通デザイン */
+        .link-btn {
+            display: block;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            color: white;
+            text-decoration: none; 
+            padding: 15px 10px;
+            margin: 20px auto;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+        }
+
+        /* 🤖 ホームページ＆ダウンロード用の青いボタン設定 */
+        .ai-btn {
+            background-color: #0044ff; /* 鮮やかな青色 */
+        }
+        
+        .ai-btn:hover {
+            background-color: #0022cc; /* マウスを乗せたら少し濃い青に */
+            transform: translateY(-2px); /* 少しだけ上に浮き上がるアニメーション */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+    </style>
 </head>
 <body>
   
-        /* 💡 リンクボタンのデザイン */
-        .link-btn {
-            display: block;
-            text-align: center;
-            background-color: #10b981; 
-            color: white;
-            text-decoration: none; 
-            padding: 8px;
-            margin: 8px 0;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 14px;
-        }
-        .link-btn:hover {
-            background-color: #059669; 
-        }
-        .ai-btn {
-            background-color: #3b82f6;
-        }
-        .ai-btn:hover {
-            background-color: #2563eb;
-        }
+    <h1>cogie0806マイクラwikiへようこそ!</h1>
+    
+    <!-- ホームページを開くボタン -->
+    <a id="link-home" class="link-btn ai-btn" href="https://cogie0806.github.io">cogie0806のホームページを開く</a>
+    
+    <!-- リソースパックをダウンロードするボタン -->
+    <a id="link-download" class="link-btn ai-btn" href="https://cogie0806.github.io/minecraftwiki/repack01.html">cogie0806のマイクラリソースパックをダウンロード</a>
 
-            <a id="link-news" class="link-btn ai-btn" href="https://cogie0806.github.io">cogie0806のホームページを開く</a>
-            <a id="link-news" class="link-btn ai-btn" href="https://cogie0806.github.io/minecraftwiki/repack01.html">cogie0806のマイクラリソースパックをダウンロード</a>
-
-
-  
 </body>
 </html>

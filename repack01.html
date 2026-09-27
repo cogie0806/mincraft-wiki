@@ -53,6 +53,32 @@
             margin: 20px auto;
         }
 
+
+        
+        /* 📋 情報テーブル（バージョンや対応環境用） */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 14px;
+        }
+
+        .info-table th, .info-table td {
+            border: 1px solid #555;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .info-table th {
+            background-color: #222;
+            color: #ffb74d;
+            width: 30%;
+        }
+
+        .info-table td {
+            background-color: #333;
+        }
+
         /* 📥 ボタンの共通デザイン */
         .download-btn, .link-btn {
             display: block;
@@ -79,9 +105,12 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
 
-        /* シラカバボタン用のアニメーション設定 */
+        /* ホームページボタン（赤） */
+        .link-btn {
+            background-color: #ef4444;
+        }
         .link-btn:hover {
-            opacity: 0.9;
+            background-color: #dc2626;
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
@@ -107,7 +136,7 @@
             h1 {
                 font-size: 20px;
             }
-            p {
+            p, .info-table {
                 font-size: 13px;
             }
             .download-btn, .link-btn {
@@ -122,23 +151,37 @@
     <div class="container">
         <h1>cogie0806のマイクラリソースパック</h1>
 
-        <!-- 💡 改行を正しく修正し、箇条書きで見やすくしました -->
         <p>
             <strong>【禁止行為】</strong><br>
             ・許可のない再配布<br>
             ・自作発言<br><br>
-            動画や配信での使用は、許可なく自由に使っていただいて構いません！（チャンネル登録や概要欄へのURL記載をしてくれると嬉しいです）<br><br>
-            Java版の 1.21.8 〜 26.3 に対応しています。
+            動画や配信での使用は、許可なく自由に使っていただいて構いません！（チャンネル登録や概要欄へのURL記載をしてくれると嬉しいです）
         </p>
+
+        <!-- リソースパックの詳細情報テーブル -->
+        <table class="info-table">
+            <tr>
+                <th>パック名</th>
+                <td>cogie0806-MC-reso.zip</td>
+            </tr>
+            <tr>
+                <th>対応環境</th>
+                <td>Java版 1.21.8 〜 26.3</td>
+            </tr>
+            <tr>
+                <th>ファイル形式</th>
+                <td>ZIP形式</td>
+            </tr>
+        </table>
 
         <!-- メインリソースパックダウンロードリンク -->
         <a href="cogie0806-MC-reso.zip" download class="download-btn">📥 リソースパックをダウンロード</a>
 
+        <!-- ホームページを開くボタン -->
+        <a id="link-weather" class="link-btn" href="https://cogie0806.github.io">🏠 cogie0806のホームページを開く</a>
 
         <!-- メインのwikiに戻るボタン -->
         <a href="index.html" class="back-link">↩️ wikiのトップページへ戻る</a>
-
-      <a id="link-weather" class="link-btn" style="background-color: #ef4444;" href="https://cogie0806.github.io">🏠 cogie0806のホームページを開く</a>
     </div>
 
 </body>

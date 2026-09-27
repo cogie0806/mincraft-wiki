@@ -9,55 +9,70 @@
     <style>
         /* 全体の基本設定 */
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
             text-align: center;
             margin: 0;
-            padding-top: 50px;
-            min-height: 100vh; /* 画面の縦幅いっぱいに広げる */
+            padding: 40px 10px 20px 10px; /* スマホの画面端に文字がくっつかないように左右に少し隙間を作る */
+            min-height: 100vh;
+            box-sizing: border-box;
 
             /* 💡 背景画像の設定 */
-            background-image: url("mc26.3.png"); /* 背景にしたい画像の名前 */
-            background-size: cover;             /* 画面全体に画像をぴったり合わせる */
-            background-position: center;        /* 画像の中心を画面の真ん中に合わせる */
-            background-repeat: no-repeat;       /* 画像が縦横にループするのを防ぐ */
-            background-attachment: fixed;       /* スクロールしても背景画像を固定する */
+            background-image: url("mc26.3.png"); 
+            background-size: cover;             
+            background-position: center;        
+            background-repeat: no-repeat;       
+            background-attachment: fixed;       
         }
 
         /* タイトル部分 */
         h1 {
-            font-size: 26px;
-            color: #ffffff; /* 画像の上で見えやすいように白文字に変更 */
+            font-size: 28px; /* パソコン用のサイズ */
+            color: #ffffff; 
             margin-bottom: 40px;
-            /* 文字の後ろに薄い影をつけて、明るい画像でも文字を読みやすくします */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+            line-height: 1.4;
         }
 
-        /* 💡 リンクボタンの共通デザイン */
+        /* 💡 リンクボタンの共通デザイン（スマホ基準） */
         .link-btn {
             display: block;
-            width: 80%;
-            max-width: 500px;
+            width: 90%; /* スマホ画面の左右に少しだけ余白を残す幅 */
+            max-width: 500px; /* パソコンなどの大画面で広がりすぎないように制限 */
             text-align: center;
             color: white;
             text-decoration: none; 
-            padding: 15px 10px;
-            margin: 20px auto;
-            border-radius: 6px;
+            padding: 16px 12px; /* タップしやすいように上下に広めの余白 */
+            margin: 16px auto; /* ボタン同士の間隔 */
+            border-radius: 8px; /* 少し角を丸くして今風のデザインに */
             font-weight: bold;
             font-size: 16px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             transition: all 0.2s ease;
+            box-sizing: border-box; /* 横幅の計算を狂わせない設定 */
         }
 
         /* 🤖 ホームページ＆ダウンロード用の青いボタン設定 */
         .ai-btn {
-            background-color: #0044ff; /* 鮮やかな青色 */
+            background-color: #0044ff; 
         }
         
+        /* ボタンに触れた時（パソコンならマウス、スマホならタップした瞬間）の効果 */
         .ai-btn:hover {
-            background-color: #0022cc; /* マウスを乗せたら少し濃い青に */
-            transform: translateY(-2px); /* 少しだけ上に浮き上がる変化 */
+            background-color: #0022cc; 
+            transform: translateY(-2px); 
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 📱 画面の横幅が500px以下の小さなスマホ用の特別ルール */
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 22px; /* スマホに合わせてタイトルを少し小さく */
+                margin-bottom: 30px;
+            }
+            .link-btn {
+                font-size: 14px; /* ボタンの文字をスマホで見やすい大きさに調整 */
+                padding: 14px 10px;
+            }
         }
     </style>
 </head>

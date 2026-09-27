@@ -77,15 +77,15 @@
             background-color: #333;
         }
 
-        /* 🔗 💡 ホームページと「全く同じ形・色」のボタンデザイン */
+        /* 🔗 💡 ホームページの形をベースにした「青いボタン」デザイン */
         .link-btn {
             display: block;
             text-align: center;
-            background-color: #10b981; /* ホームページと同じエメラルドグリーン */
+            background-color: #3b82f6; /* 前回の自作コードで使われていた綺麗な青色 */
             color: white;
             text-decoration: none; 
             padding: 8px;              /* ホームページと同じスッキリした高さ */
-            margin: 8px auto;          /* ホームページと同じ間隔 */
+            margin: 12px auto;         /* ボタン同士の間隔を少しだけ調整 */
             border-radius: 4px;        /* ホームページと同じ角丸具合 */
             font-size: 14px;           /* ホームページと同じ文字サイズ */
             width: 100%;               /* ボックスの幅いっぱいに広げる */
@@ -94,22 +94,9 @@
             transition: background-color 0.2s;
         }
 
-        /* ホームページと同じホバー効果 */
+        /* 青いボタンのホバー効果 */
         .link-btn:hover {
-            background-color: #059669; /* 触れたときに少し暗いグリーンに */
-        }
-
-        /* ↩️ 戻るリンク */
-        .back-link {
-            display: inline-block;
-            margin-top: 30px;
-            color: #a3e2a3;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-            color: #ffffff;
+            background-color: #2563eb; /* 触れたときに少し濃い青色に */
         }
 
         /* 📱 スマホ用の調整 */
@@ -154,14 +141,14 @@
             </tr>
         </table>
 
-        <!-- ダウンロードボタン（ホームページと同じ形・色） -->
+        <!-- ダウンロードボタン（ホームページの形×青） -->
         <a href="cogie0806-MC-reso.zip" download class="link-btn">📥 リソースパックをダウンロード</a>
 
-        <!-- ホームページを開くボタン（ホームページと同じ形・色） -->
-        <a id="link-weather" class="link-btn" href="https://github.io">🏠 cogie0806のホームページを開く</a>
+        <!-- ホームページを開くボタン（ホームページの形×青） -->
+        <a id="link-home" class="link-btn" href="https://github.io">🏠 cogie0806のホームページを開く</a>
 
-        <!-- メインのwikiに戻るボタン -->
-        <a href="index.html" class="back-link">↩️ wikiのトップページへ戻る</a>
+        <!-- 💡 wikiのトップページへ戻る（テキストリンクから青いボタンに変更！） -->
+        <a href="index.html" class="link-btn">↩️ wikiのトップページへ戻る</a>
     </div>
 
 </body>

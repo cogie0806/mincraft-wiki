@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ファビコン（メインページとお揃い） -->
+    <!-- ファビコン -->
     <link rel="icon" href="cogie0806.jpg" type="image/jpeg">
     <title>リソースパック配布ページ - cogie0806マイクラwiki</title>
     <style>
@@ -17,7 +17,7 @@
             box-sizing: border-box;
             color: #ffffff;
 
-            /* 背景画像（メインページと共通） */
+            /* 背景画像 */
             background-image: url("mc26.3.png"); 
             background-size: cover;             
             background-position: center;        
@@ -48,14 +48,12 @@
             font-size: 15px;
             line-height: 1.8;
             color: #e0e0e0;
-            text-align: left; /* 規約を読みやすくするために左寄せに設定 */
+            text-align: left;
             max-width: 500px;
             margin: 20px auto;
         }
 
-
-        
-        /* 📋 情報テーブル（バージョンや対応環境用） */
+        /* 📋 情報テーブル */
         .info-table {
             width: 100%;
             border-collapse: collapse;
@@ -79,40 +77,26 @@
             background-color: #333;
         }
 
-        /* 📥 ボタンの共通デザイン */
-        .download-btn, .link-btn {
-            display: block;
-            width: 100%;
-            color: white;
-            text-decoration: none;
-            padding: 16px;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 18px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            transition: all 0.2s ease;
-            box-sizing: border-box;
-            margin-top: 20px;
-        }
-
-        /* メインダウンロードボタン（緑） */
-        .download-btn {
-            background-color: #10b981; 
-        }
-        .download-btn:hover {
-            background-color: #059669;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-        }
-
-        /* ホームページボタン（赤） */
+        /* 🔗 💡 ホームページと「全く同じ形・色」のボタンデザイン */
         .link-btn {
-            background-color: #ef4444;
+            display: block;
+            text-align: center;
+            background-color: #10b981; /* ホームページと同じエメラルドグリーン */
+            color: white;
+            text-decoration: none; 
+            padding: 8px;              /* ホームページと同じスッキリした高さ */
+            margin: 8px auto;          /* ホームページと同じ間隔 */
+            border-radius: 4px;        /* ホームページと同じ角丸具合 */
+            font-size: 14px;           /* ホームページと同じ文字サイズ */
+            width: 100%;               /* ボックスの幅いっぱいに広げる */
+            box-sizing: border-box;
+            border: none;              /* 枠線なし */
+            transition: background-color 0.2s;
         }
+
+        /* ホームページと同じホバー効果 */
         .link-btn:hover {
-            background-color: #dc2626;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            background-color: #059669; /* 触れたときに少し暗いグリーンに */
         }
 
         /* ↩️ 戻るリンク */
@@ -138,10 +122,6 @@
             }
             p, .info-table {
                 font-size: 13px;
-            }
-            .download-btn, .link-btn {
-                font-size: 15px;
-                padding: 14px;
             }
         }
     </style>
@@ -174,11 +154,11 @@
             </tr>
         </table>
 
-        <!-- メインリソースパックダウンロードリンク -->
-        <a href="cogie0806-MC-reso.zip" download class="download-btn">📥 リソースパックをダウンロード</a>
+        <!-- ダウンロードボタン（ホームページと同じ形・色） -->
+        <a href="cogie0806-MC-reso.zip" download class="link-btn">📥 リソースパックをダウンロード</a>
 
-        <!-- ホームページを開くボタン -->
-        <a id="link-weather" class="link-btn" href="https://cogie0806.github.io">🏠 cogie0806のホームページを開く</a>
+        <!-- ホームページを開くボタン（ホームページと同じ形・色） -->
+        <a id="link-weather" class="link-btn" href="https://github.io">🏠 cogie0806のホームページを開く</a>
 
         <!-- メインのwikiに戻るボタン -->
         <a href="index.html" class="back-link">↩️ wikiのトップページへ戻る</a>

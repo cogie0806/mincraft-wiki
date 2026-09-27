@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ファビコン（メインページとお揃い） -->
+    <link rel="icon" href="cogie0806.jpg" type="image/jpeg">
+    <title>リソースパック配布ページ - cogie0806マイクラwiki</title>
+    <style>
+        /* 全体の基本設定 */
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 40px 15px;
+            min-height: 100vh;
+            box-sizing: border-box;
+            color: #ffffff;
+
+            /* 背景画像（メインページと共通） */
+            background-image: url("mc26.3.png"); 
+            background-size: cover;             
+            background-position: center;        
+            background-repeat: no-repeat;       
+            background-attachment: fixed;       
+        }
+
+        /* コンテンツを囲む半透明の黒いボックス（文字を読みやすくするため） */
+        .container {
+            background-color: rgba(0, 0, 0, 0.75);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            border: 1px solid #444;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-top: 0;
+            color: #ffb74d; /* マイクラ風のオレンジ・ゴールド色 */
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+
+        /* 📋 情報テーブル（バージョンや対応環境用） */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 14px;
+        }
+
+        .info-table th, .info-table td {
+            border: 1px solid #555;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .info-table th {
+            background-color: #222;
+            color: #ffb74d;
+            width: 30%;
+        }
+
+        .info-table td {
+            background-color: #333;
+        }
+
+        /* 📥 ダウンロードボタンの設定 */
+        .download-btn {
+            display: block;
+            width: 100%;
+            background-color: #10b981; /* 安心感のあるエメラルドグリーン */
+            color: white;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+
+        .download-btn:hover {
+            background-color: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        /* ↩️ 戻るリンク */
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #a3e2a3;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        /* 📱 スマホ用の調整 */
+        @media (max-width: 500px) {
+            .container {
+                padding: 20px 15px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            p, .info-table {
+                font-size: 13px;
+            }
+            .download-btn {
+                font-size: 16px;
+                padding: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>cogie0806のリソースパック</h1>
+
+            <a id="link-weather" class="link-btn" style="background-color: #ef4444;" href="https://cogie0806.github.io/mincraft-wiki/repack02.html">シラカバを白樺に変えるリソースパック</a>
+      
+    </div>
+
+</body>
+</html>
